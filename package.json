@@ -31,6 +31,7 @@
     "@storybook/react": "^8.1.1",
     "@storybook/test": "^8.1.1",
     "@stylelint/postcss-css-in-js": "^0.38.0",
+    "@tanstack/react-query-devtools": "^5.37.1",
     "@types/react": "^18.3.2",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",

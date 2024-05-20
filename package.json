@@ -13,6 +13,11 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "zustand": "^4.5.2"
+  },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.4.0",
     "@emotion/eslint-plugin": "^11.11.0",

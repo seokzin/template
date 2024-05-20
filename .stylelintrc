@@ -1,6 +1,6 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier", "stylelint-config-recess-order"],
-  "customSyntax": "@stylelint/postcss-css-in-js",
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "customSyntax": "postcss-styled-syntax",
   "rules": {
     "no-empty-source": null
   }

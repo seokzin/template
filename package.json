@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:css": "stylelint \"**/*.(ts|tsx|css)\"",
-    "prettier": "prettier \"**/*.(ts|tsx|css|md)\" --write"
+    "prettier": "prettier \"**/*.(ts|tsx|css|md)\" --write",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.11.0",
@@ -31,7 +32,7 @@
     "prettier": "2.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "stylelint": "14.16.1",
+    "stylelint": "^16.5.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recess-order": "^4.3.0",
     "stylelint-config-recommended": "^13.0.0",

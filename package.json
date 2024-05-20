@@ -13,6 +13,7 @@
   "devDependencies": {
     "@emotion/eslint-plugin": "^11.11.0",
     "@stylelint/postcss-css-in-js": "^0.38.0",
+    "@types/react": "^18.3.2",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
     "eslint": "^8.28.0",

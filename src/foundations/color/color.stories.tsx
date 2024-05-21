@@ -11,28 +11,28 @@ const meta: Meta = {
 export const Examples: StoryObj = {
   render: () => (
     <>
-      <Text name="h100">Light Theme</Text>
+      <Text name="h1">Light Theme</Text>
 
       <Flex>
         {Object.entries(color.light).map(([key, value]) => (
           <Container key={key}>
             <ColorBox value={value} />
             <ColorValue>
-              <Text name="caption2_strong">{key}</Text>
-              <Text name="caption2">{value}</Text>
+              <Text>{key}</Text>
+              <Text>{value}</Text>
             </ColorValue>
           </Container>
         ))}
       </Flex>
 
-      <Text name="h100">Dark Theme</Text>
+      <Text>Dark Theme</Text>
 
       <Flex>
         {Object.entries(color.light).map(([key, value]) => (
           <Container key={key}>
             <ColorBox value={value} />
-            <Text name="caption2_strong">{key}</Text>
-            <Text name="caption2">{value}</Text>
+            <Text>{key}</Text>
+            <Text>{value}</Text>
           </Container>
         ))}
       </Flex>

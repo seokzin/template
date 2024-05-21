@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Text } from '@/components'
+import { Button, onPopup, Text } from '@/components'
 import { useCounter } from '@/hooks'
 import { useGetTodoQuery } from '@/queries'
 import { useDarkModeStore } from '@/store'
@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div>
-      <Text>Util: {add(3, 4)}</Text>
+      <Text name="h1">Util: {add(3, 4)}</Text>
       <Text>Tanstack Query:</Text>
 
       {isLoading ? (
@@ -35,6 +35,28 @@ const Home = () => {
       <br />
 
       <Button onClick={toggleDarkMode}>DarkMode</Button>
+
+      <br />
+      <br />
+
+      <Button
+        onClick={() =>
+          onPopup({
+            title: '타이틀',
+            description: '설명 (optional)',
+            confirmText: '확인',
+            onConfirm: () => {
+              console.log('confirm')
+            },
+            cancelText: '취소',
+            onCancel: () => {
+              console.log('cancel')
+            },
+          })
+        }
+      >
+        Popup
+      </Button>
     </div>
   )
 }

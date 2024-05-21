@@ -2,10 +2,11 @@ import styled from '@emotion/styled'
 
 interface ButtonProps {
   children: React.ReactNode
+  onClick: () => void
 }
 
-const Button = ({ children }: ButtonProps) => {
-  return <Container>{children}</Container>
+const Button = ({ children, onClick }: ButtonProps) => {
+  return <Container onClick={onClick}>{children}</Container>
 }
 
 export default Button
@@ -19,9 +20,4 @@ const Container = styled.button`
   background-color: #007bff;
   border: none;
   border-radius: 5px;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #0056b3;
-  }
 `
